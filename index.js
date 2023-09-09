@@ -32,7 +32,6 @@ class Card {
       this.cards[randomIndex] = currentIndex;
     }
   }
-}
     // split 26 out of 52 total cards between each of the players
 
     deal(player1,player2);
