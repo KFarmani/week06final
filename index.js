@@ -74,13 +74,19 @@ console.log(myDeck.cards);
     }
   
     playRound() {
-   
-    }
+      if (player1 > player2) {
+        this.player1.playcard();
+        console.log(`player1 played ${player1} and player2 played ${player2} point player 1`);
+       } else if (player2 > player1) {
+        this.player2.point();
+        console.log(`player 1 played ${player1} and player2 played ${player2} player point`);
+       }else{
+        console.log(`player1 played ${player1} and player2 played ${player2} no point awarded`);
+        
+       }
+       }
+
     
     declareWinner() {
   
     }
-  }
-  
-  const assert = require('chai').assert;
-  
