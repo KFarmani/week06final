@@ -86,7 +86,13 @@ console.log(myDeck.cards);
        }
        }
 
-    
-    declareWinner() {
-  
-    }
+       declareWinner() {
+        if (this.player1.points > this.player2.points) {
+          console.log(`${this.player1.name} wins with ${this.player1.points} points!`);
+        } else if (this.player2.points > this.player1.points) {
+          console.log(`${this.player2.name} wins with ${this.player2.points} points!`);
+        } else {
+          console.log("It's a tie! No winner.");
+        }
+      }
+      
