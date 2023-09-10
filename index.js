@@ -95,4 +95,3 @@ console.log(myDeck.cards);
           console.log("It's a tie! No winner.");
         }
       }
-      
